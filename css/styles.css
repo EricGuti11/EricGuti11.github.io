@@ -57,6 +57,7 @@ body {
     align-items: center;
     padding: 40px 80px;
     gap: 40px;
+    min-height: 250px;
 }
 
 .bodyContent .text {
