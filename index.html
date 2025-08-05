@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Personal Webpage</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-	This is my website
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Webpage</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Eric</h1>
+            <div class="navButtons">
+                <button onclick="loadHome()">Home</button>
+                <button onclick="loadPortfolio()">Portfolio</button>
+            </div>
+        </div>
+
+        <div class="bodyContent" id="mainContent">
+            <!-- Content will be loaded here -->
+        </div>
+
+        <script src="js/app.js"></script>
+    </body>
 </html>
