@@ -1,0 +1,78 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+/* Header styling */
+.header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    margin: 30px auto;
+    width: 90%;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1000;
+}
+
+/* Header Buttons */
+.navButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.navButtons button {
+    padding: 10px 20px;
+    border-radius: 999px;          
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.navButtons button:hover {
+    background-color: red;
+}
+
+/* Body Section */
+.bodyContent {
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    gap: 40px;
+}
+
+.bodyContent .text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.bodyContent .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.body-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;         
+}
