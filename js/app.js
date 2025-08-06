@@ -65,6 +65,4 @@ function loadHome() {
   windown.onload = loadHome;
   if (document.readyState === 'loading') {
     window.addEventListener('DOMContentLoaded', loadHome);
-  } else {
-    loadHome();
   }
