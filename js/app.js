@@ -1,11 +1,13 @@
 const aboutMe = document.getElementById('aboutMe');
 const findMe = document.getElementById('findMe');
 const projectContainer = document.getElementById('projectContainer');
+const projectList = document.getElementById('projectsContainer');
 
 
 function loadHome() {
     // Clear portfolio page
-    projectContainer.innerHTML =''
+    projectContainer.innerHTML = ''
+    projectList = ''
 
     aboutMe.innerHTML = `
       <div class="text">
@@ -57,8 +59,7 @@ function loadHome() {
   fetch('projects.json')
     .then(res => res.json())
     .then(projects => {
-      const container = document.getElementById('projectsContainer');
-      container.innerHTML = projects.map(p => `
+      projectList.innerHTML = projects.map(p => `
         <div class="project">
           <h3>${p.title}</h3>
           <p>${p.description}</p>
@@ -67,7 +68,7 @@ function loadHome() {
       `).join('');
     })
     .catch(err => {
-      document.getElementById('projectsContainer').textContent = 'Failed to load projects.';
+      projectList.textContent = 'Failed to load projects.';
       console.error(err);
     });
   }
