@@ -16,9 +16,7 @@ function loadHome() {
     document.getElementById('findMe').innerHTML = `
       <div class="text">
         <p>
-          Hi, I'm Eric Gutierrez — a Computer Science graduate from Appalachian State University.
-          My academic focus was in web and software development, as well as systems programming.
-          This site is my personal space to showcase the projects I've built and the work I'm proud of.
+        Where to find me
         </p>
       </div>
 
@@ -62,7 +60,6 @@ function loadHome() {
     });
   }
   
-windown.onload = loadHome;
 window.addEventListener('DOMContentLoaded', loadHome);
 
 
