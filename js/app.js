@@ -62,7 +62,7 @@ function loadHome() {
     });
   }
   
-  windown.onload = loadHome;
-  if (document.readyState === 'loading') {
-    window.addEventListener('DOMContentLoaded', loadHome);
-  }
+windown.onload = loadHome;
+window.addEventListener('DOMContentLoaded', loadHome);
+
+
