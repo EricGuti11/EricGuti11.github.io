@@ -1,5 +1,13 @@
+const aboutMe = document.getElementById('aboutMe');
+const findMe = document.getElementById('findMe');
+const projectContainer = document.getElementById('projectContainer');
+
+
 function loadHome() {
-    document.getElementById('aboutMe').innerHTML = `
+    // Clear portfolio page
+    projectContainer.innerHTML =''
+
+    aboutMe.innerHTML = `
       <div class="text">
         <p>
           Hi, I'm Eric Gutierrez — a Computer Science graduate from Appalachian State University.
@@ -13,7 +21,7 @@ function loadHome() {
       </div>
     `;
 
-    document.getElementById('findMe').innerHTML = `
+    findMe.innerHTML = `
       <div class="text">
         <p>
         Where to find me
@@ -28,7 +36,11 @@ function loadHome() {
   }
   
   function loadPortfolio() {
-    document.getElementById('projectContainer').innerHTML = `
+    // Reset home page
+    aboutMe.innerHTML = ''
+    findMe.innerHTML = ''
+
+    projectContainer.innerHTML = `
     <div class="projectHeader">
         <h2>My Projects</h2>
     </div>
