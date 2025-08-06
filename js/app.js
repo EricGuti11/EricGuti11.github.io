@@ -7,6 +7,7 @@ function loadHome() {
           This site is my personal space to showcase the projects I've built and the work I'm proud of.
         </p>
       </div>
+
       <div class="image">
         <!-- Add a home image if you like -->
       </div>
@@ -20,6 +21,7 @@ function loadHome() {
           This site is my personal space to showcase the projects I've built and the work I'm proud of.
         </p>
       </div>
+
       <div class="image">
         <!-- Add a home image if you like -->
       </div>
@@ -29,10 +31,14 @@ function loadHome() {
   
   function loadPortfolio() {
     document.getElementById('projectContainer').innerHTML = `
+    <div class="projectHeader">
+        <h2>My Projects</h2>
+    </div>
+
     <div class="text">
-      <h2>My Projects</h2>
       <div id="projectsContainer">Loading projects...</div>
     </div>
+
     <div class="image">
       <!-- Optional: image for portfolio section -->
     </div>
@@ -57,4 +63,8 @@ function loadHome() {
   }
   
   windown.onload = loadHome;
-  window.addEventListener('DOMContentLoaded', loadHome);
+  if (document.readyState === 'loading') {
+    window.addEventListener('DOMContentLoaded', loadHome);
+  } else {
+    loadHome();
+  }
