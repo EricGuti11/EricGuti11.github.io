@@ -1,7 +1,11 @@
 [
     {
-        "title": "Cool App",
-        "description": "Does cool things",
-        "link": "https://github.com/yourusername/coolapp"
+        "title": "Shattered Restraints",
+        "description": [
+            "2d fighting game that I co-created as part of a school project.",
+            "We each designed the artwork for our respective characters.",
+            "My focus was on implementing the state machine for the game aswell as the game logic, and some UI elements."
+        ],
+        "link": "https://github.com/J-Branch/capstone-2025"
     }
 ]

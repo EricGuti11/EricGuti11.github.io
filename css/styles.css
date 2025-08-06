@@ -49,31 +49,3 @@ body {
     background-color: red;
 }
 
-/* Body Section */
-.bodyContent {
-    background-color: #ddd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 80px;
-    gap: 40px;
-    min-height: 250px;
-}
-
-.bodyContent .text {
-    flex: 1;
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.bodyContent .image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.body-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;         
-}
