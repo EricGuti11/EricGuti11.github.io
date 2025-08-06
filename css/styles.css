@@ -48,4 +48,16 @@ body {
 .navButtons button:hover {
     background-color: red;
 }
+/* Styling for Homepage */
+.homeContent {
+    margin: 10px auto;
+    padding: 10px 40px;
+    width: 90%;
+}
 
+/* Styling for Portfolio page */
+.projectContent {
+    margin: 10px auto;
+    padding: 10px 40px;
+    width: 90%;
+}
