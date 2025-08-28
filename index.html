@@ -7,25 +7,58 @@
     </head>
     <body>
         <div class="header">
-            <h1>Eric Gutierrez</h1>
-            <div class="navButtons">
-                <button onclick="loadHome()">Home</button>
-                <button onclick="loadPortfolio()">Portfolio</button>
-            </div>
+            <nav class="nav-buttons">
+                <a href="#section1">About</a>
+                <a href="#section2">Skills</a>
+                <a href="#section3">Projects</a>
+                <a href="#section4">Contact</a>
+                <a href="images/Resume.pdf" target="_blank">Resume</a>
+            </nav>
         </div>
 
-        <div class="homeContent" id="aboutMe">
-            <!-- Content about me -->
+        <div class="container">
+            <section id="section1" class="panel">
+                <div class="aboutMe">
+                    <p>
+                        Hi, I'm Eric Gutierrez, a Computer Science graduate from Appalachian State University.
+                        My academic focus was in web and software development, as well as systems programming.
+                        This site is my personal space to showcase the projects I've built and the work I'm proud of.
+                    </p>
+                </div>
+            </section>
+            <section id="section2" class="panel">
+                <div class="skills">
+                    <p>
+                        Skills - HTML JavaScript C C++ Java Haskell Python
+                        I'm driven by curiosity and a passion for solving tough problems, 
+                        always eager to explore new technologies and ideas.
+                    </p>
+                </div>
+            </section>
+            <section id="section3" class="panel">
+                <div class="projects">
+                    <h2>Projects</h2>
+                    <div class="project">
+                        <h3>Shattered Restraints</h3>
+                        <p>
+                            Shattered Restraints is a 2D fighting game developed as part of my senior project, which I co-created with a partner. 
+                            I contributed extensively to both the gameplay and visual design, including developing the character state machine, 
+                            designing and implementing key UI elements, and creating original artwork for my custom character, the Swordsman.
+                            <br>Github Repository - <a href="https://github.com/J-Branch/capstone-2025"> Shattered Restraints </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="section4" class="panel">
+                <div class="contactMe">
+                    <p>
+                        Contact Me - I am always open to new opportunities. 
+                        Email - ericgbusi11@gmail.com
+                        Linkedin - Eric Gutierrez
+                    </p>
+                </div>
+            </section>
         </div>
 
-        <div class="homeContent" id="findMe">
-            <!-- Content to find me -->
-        </div>
-
-        <div class="projectContent" id="projectContainer">
-            <!-- Project list -->
-        </div>
-
-        <script src="js/app.js" defer></script>
     </body>
 </html>

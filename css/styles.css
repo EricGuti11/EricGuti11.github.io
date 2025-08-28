@@ -1,3 +1,11 @@
+:root {
+    --background-color: #F7F7F7;
+    --text-color: #1F2933;
+    --primary-color: #3B82F6;
+    --secondary-color-one: #10B981;
+    --secondary-color-two: #F59E0B;
+}
+
 /* Reset default margins and paddings */
 * {
     margin: 0;
@@ -5,59 +13,115 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #eee;
+/* Styles for the Scroll Feature */
+html, body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+  }
+  
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
-
-/* Header styling */
-.header {
-    background-color: #333;
-    color: white;
+  
+.panel {
+    height: 100vh;
+    scroll-snap-align: start;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    margin: 30px auto;
-    width: 90%;
-    border-radius: 100px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    position: relative;
-    z-index: 1000;
-}
-
-/* Header Buttons */
-.navButtons {
-    display: flex;
-    gap: 10px;
-}
-
-.navButtons button {
-    padding: 10px 20px;
-    border-radius: 999px;          
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease;
+    font-size: 3rem;
 }
 
-.navButtons button:hover {
-    background-color: red;
-}
-/* Styling for Homepage */
-.homeContent {
-    margin: 10px auto;
-    padding: 10px 40px;
-    width: 90%;
+  /* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100px;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+    background-color: var(--background-color);
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
 }
 
-/* Styling for Portfolio page */
-.projectContent {
-    margin: 10px auto;
-    padding: 10px 40px;
-    width: 90%;
+.nav-buttons {
+    display: flex;
+    gap: 24px;
+    font-size: 24px;
+}
+
+.nav-buttons a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
+.nav-buttons a:hover {
+    background-color: #E0E0E0;
+    font-weight: bold;
+}
+
+/* Styles for the different bodies */
+.aboutMe {
+    background-color: var(--background-color);
+    width: 80%;
+    height: 70%;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMe p {
+    padding: 30px;
+    font-size: 40px;
+}
+
+.projects {
+    background-color: var(--background-color);
+    width: 80%;
+    height: 70%;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects p {
+    padding: 30px;
+    font-size: 40px;
+}
+
+.projects h2 {
+    color: var(--primary-color);
+}
+
+.projects h3 {
+    color: var(--secondary-color-one);
+}
+
+.projects a {
+    text-decoration: none;
+    color: var(--secondary-color-two);
+}
+
+.projects a:hover {
+    font-weight: bold;
 }
